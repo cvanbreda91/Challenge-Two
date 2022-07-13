@@ -4,41 +4,45 @@
     --tertiary-color: #03ef32;
 }
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black; 
 }
+
 body {
     color: var(--tertiary-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* HEADER / NAV BAR STYLES START */
 header {
-    padding: 20px 35px;
+    padding: 10px 50px;
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    top: 0;
+    background-size:auto;
+    background-position: 100%;
+    z-index: 9999;
+    margin-right: 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    background-image: url("<!--Add Image-->");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
   }
   header h1 {
     font-weight: bold;
+    background-color: var(--tertiary-color);
     margin: 0;
-    font-size: 36px;
+    font-size: 40px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(137, 78, 126, 0.5);
   }
   
   header a {
     text-decoration:wavy;
+    background-color: var(--tertiary-color);
     color: var(--primary-color);
   }
   
@@ -55,9 +59,9 @@ header {
   }
   
   header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.75vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -71,63 +75,77 @@ header {
 
 /* STYLE ALL SECTION TAGS */
 section {
-    padding: 60px;
+    padding: 25px;
 }
 
 /* HERO STYLES START */
 .hero {
-    background-image: url('<!--add image-->');
+    background-color: var(--tertiary-color);
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
+
   }
-.hero-name {
+.hero div h2, .hero div p {
     width: 100%;
-    margin: 0 50;
-    display: block;
+    display: flex;
+    text-align: left;
     flex-wrap: wrap;
-    justify-content: space-around;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding-right: 50px;
+}
+.hero div h2 {
+  padding-top: 150px;
+  font-size: 35px;
+}
+
+.hero div p {
+  font-size: 25px;
+}
+.hero div img {
+  width: 300px;
+  height: 400px;
 }
 /* HERO STYLES END */
 
 /* SECTION TITLE STYLES START */
-.section{
-    font-size: 48px;
-    border-bottom: 3px solid;
+.section {
+    font-size: 36px;
     color: var(--secondary-color);
     padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 100%;
+    text-align: Left;
+    width: 80%;
   }
 
-.section h2{
-
+.section h2 {
+  padding-bottom: 25px;
 }
 
+.section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.section div article{
+min-width: 375px;
+max-width: 375px;
+padding: 15px;
+padding-left: 25px;
+border-width: 10px;
+border-style: groove;
+border-color: var(--secondary-color);
+}
+.section h3 {
+  font-style: italic;
+  color: var(--tertiary-color);
+}
+.section ul {
+  list-style: none;
+  color:var(--primary-color)
+}
   /* SECTION TITLE STYLES END */
 
-/* ABOUT ME STYLE STARTS*/
-
-.about-me {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-.about-me h3 {
-    color: var(--tertiary-color);
-}
-
-.about-me ul {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    list-style: none; 
-}
-/* ABOUT ME STYLE ENDS*/
