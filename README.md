@@ -24,4 +24,5 @@ Made with ❤️ by Courtney
 * border radius
 * sticky header
 
+## Website Snapshot
 ![Website](./assets/images/2022-07-14.png "Website Snapshot")
