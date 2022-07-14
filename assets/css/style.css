@@ -3,6 +3,15 @@
     --secondary-color: #024e76;
     --tertiary-color: #03ef32;
 }
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -88,6 +97,7 @@ section {
     align-items: flex-start;
 
   }
+
 .hero div h2, .hero div p {
     width: 100%;
     display: flex;
@@ -104,6 +114,7 @@ section {
 
 .hero div p {
   font-size: 25px;
+  font-style: italic;
 }
 .hero div img {
   width: 300px;
@@ -122,6 +133,7 @@ section {
 
 .section h2 {
   padding-bottom: 25px;
+  font-size: 40px;
 }
 
 .section div {
@@ -134,10 +146,11 @@ section {
 min-width: 375px;
 max-width: 375px;
 padding: 15px;
-padding-left: 25px;
-border-width: 10px;
+padding-left: 15px;
+border-width: 15px;
 border-style: groove;
 border-color: var(--secondary-color);
+
 }
 .section h3 {
   font-style: italic;
@@ -146,6 +159,65 @@ border-color: var(--secondary-color);
 .section ul {
   list-style: none;
   color:var(--primary-color)
+}
+
+.websites h2{
+  font-size: 40px;
+  color: var(--secondary-color);
+  padding-bottom: 25px;
+
+}
+
+.websites div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.websites div article {
+  min-width: 550px;
+  max-width: 550px;
+  padding: 20px;
+  padding-left: 60px;
+  border-width: 15px;
+  border-style: groove;
+  border-color: var(--secondary-color);
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.websites div article a:hover{
+  opacity: .25;
+}
+.websites h4 {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  color: var(--primary-color);
+  padding-right: 50px;
+  font-size: 30px;
+}
+
+.contact {
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: Left;
+  width: 80%;
+}
+
+.contact h2 {
+  font-size: 36px;
+}
+
+.contact p, .contact a {
+  color: var(--primary-color);
+  font-style: normal;
+}
+
+.contact a:hover {
+  opacity: .75;
 }
   /* SECTION TITLE STYLES END */
 
