@@ -173,6 +173,7 @@ section {
   padding-bottom: var(--bottom-padding);
 }
 
+
 .websites h2{
   font-size: 40px;
   color: var(--secondary-color);
@@ -184,20 +185,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 .websites div article {
-  min-width: 550px;
-  max-width: 550px;
   padding: 20px;
-  padding-left: 60px;
-  border-width: 15px;
-  border-style: groove;
-  border-color: var(--secondary-color);
-  border-radius: 15px;
   margin: 10px;
   align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 .websites div article a:hover{
@@ -207,7 +199,6 @@ section {
   width: 100%;
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
   color: var(--primary-color);
   padding-right: 50px;
   font-size: 30px;
@@ -218,9 +209,30 @@ section {
   height: 400px
 }
 
+
 .websites p {
-  color:var(--primary-color)
+  color:var(--tertiary-color);
+  font-weight: bolder;
 }
+
+.pretty-border {
+  padding: 20px;
+  display: block;
+  border-width: 15px;
+  border-style: groove;
+  border-radius: 15px;
+  border-color: var(--secondary-color);
+  
+}
+
+#run img {
+  width: 800px;
+  height: 700px;
+  display:flex;
+
+}
+
+
 .contact {
   color: var(--secondary-color);
   padding-bottom: var(--bottom-padding);
@@ -302,7 +314,11 @@ body {
     height: 300px;
 
   }
+#run {
+  width: 500px; 
+  height: 400px
 
+}
   .me h2 {
     padding-top: var(--bottom-padding);
   }
@@ -370,7 +386,7 @@ body {
     margin-right: auto; 
   }
 
-  .websites img {
+  .websites img, #run {
     width: 300px; 
     height: 195px;
     display: block;
