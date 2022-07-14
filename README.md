@@ -23,3 +23,5 @@ Made with ❤️ by Courtney
 * text shadow
 * border radius
 * sticky header
+
+![Website](./assets/images/2022-07-14.png "Website Snapshot")
