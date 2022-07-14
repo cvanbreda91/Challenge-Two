@@ -4,7 +4,7 @@ Portfolio
 ## Assignment
 * create apotential deployed portfolio of work samples
 * so that a potential employer can review samples of my work and assess whether I'll be a good candidate for an open position
-* use advanced html and css stylings
+* use advanced html and css variables
 
 ## Built With
 * HTML
